@@ -76,6 +76,10 @@ app.get('/download', (req, res) => {
     });
 });
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+app.listen(PORT, (err) => {
+    if (err) {
+        console.error('Failed to start server:', err);
+    } else {
+        console.log(`Server running on port ${PORT}`);
+    }
 });
