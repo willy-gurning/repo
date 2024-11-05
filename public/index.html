@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="content-title">
+            Youtube Downloader
+        </div>
+        <div class="input">
+            <input type="text" class="text" name="" id="videoUrl" placeholder="Masukkan Url Video">
+            <div class="button">
+                <button onclick="downloadVideo()" class="btn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>            
+        </div>
+        <img class="thumbnail" id="thumbnail" alt="Thumbnail Video Akan Ditampilkan Di Sini">
+        <div class="videoTitle" id="videoTitle">asd</div>
+        <div class="download-btn">
+            <button class="mp3-download" id="mp-3" onclick="download('mp3')">
+                MP3
+            </button>
+            <button class="mp4-download" id="mp-4" onclick="download('mp4')">
+                MP4
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
