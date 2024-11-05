@@ -28,13 +28,11 @@ app.get('/download', (req, res) => {
         '-f', 'bestaudio',
         '--extract-audio',
         '--audio-format', 'mp3',
-        '--no-continue',
         '-o', outputTemplate,
         url
     ] : [
         '-f', 'bestvideo[ext=mp4][height<=720]+bestaudio[ext=m4a]/best[ext=mp4][height<=720]',
-        '--merge-output-format', 'mp4',
-        '--no-continue',
+        '--merge-output-format', 'mp4', 
         '-o', outputTemplate,
         url
     ];
