@@ -52,9 +52,7 @@ function download(format) {
         return;
     }
 
-    // URL untuk unduhan file yang akan diarahkan ke browser
-    const apiUrl = `http://localhost:3000/download?url=${encodeURIComponent(videoUrl)}&format=${format}`;
-
-    // Gunakan `window.location.href` untuk memulai unduhan di browser
-    window.location.href = apiUrl;
+    const apiUrl = `/api/download?url=${encodeURIComponent(videoUrl)}&format=${format}`;
+    window.location.href = apiUrl; // Memulai unduhan
 }
+
