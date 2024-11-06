@@ -52,7 +52,7 @@ function download(format) {
         return;
     }
 
-    const apiUrl = `http://localhost:3000/download?url=${encodeURIComponent(videoUrl)}&format=${format}`;
+    const apiUrl = `/download?url=${encodeURIComponent(videoUrl)}&format=${format}`;
     window.location.href = apiUrl; // Memulai unduhan
 }
 
